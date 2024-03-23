@@ -73,7 +73,6 @@ yarn start
 - **Error Response:**
   - **Code:** 404 Not Found
   - **Content:** `{ error: 'Post not found' }`
-- **Sample Call:**
 
 ### Get Post by ID
 - **URL:** `/posts/:id`
@@ -87,8 +86,7 @@ yarn start
 - **Error Response:**
 - **Code:** 404 Not Found
 - **Content:** `{ error: 'Post not found' }`
-- **Sample Call:**
-- 
+
 ### Create New Post
 - **URL:** `/posts/`
 - **Method:** `POST`
@@ -100,8 +98,7 @@ yarn start
 - **Error Response:**
 - **Code:** 500 Internal Server Error
 - **Content:** `{ error: 'Failed to create post' }` or `{ error: 'Incomplete data.' }` if request body is missing required fields.
-- **Sample Call:**
-- 
+
 ### Create Multiple Posts in Bulk
 - **URL:** `/posts/bulk`
 - **Method:** `POST`
@@ -113,7 +110,6 @@ yarn start
 - **Error Response:**
 - **Code:** 500 Internal Server Error
 - **Content:** `{ error: 'Failed to create post' }`
-- **Sample Call:**
 
 ### Messages Routes
 
@@ -129,8 +125,7 @@ yarn start
 - **Error Response:**
 - **Code:** 500 Internal Server Error
 - **Content:** `{ error: 'Internal Server Error' }`
-- **Sample Call:**
-- 
+
 ### Create New Message
 - **URL:** `/messages/`
 - **Method:** `POST`
@@ -142,4 +137,3 @@ yarn start
 - **Error Response:**
 - **Code:** 500 Internal Server Error
 - **Content:** `{ error: 'Failed to put message' }`
-- **Sample Call:**
