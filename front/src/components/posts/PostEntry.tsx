@@ -16,7 +16,7 @@ export default function BlogEntry({ extended = false, right, data }: IBlogEntryP
       <div className={extended ? "lg:p-14 p-5 text-black" : "p-5 w-full text-black"}>
         <span className="font-light">{data.author}</span>
         <h2 className="lg:text-2xl text-xl font-bold text-[#f1a10a]">{data.title}</h2>
-        <span className='lg:text-base text-sm'>{truncate(data.content, extended ? 500 : 200)}</span>
+        <span className='lg:text-base text-sm'>{truncate(data.content, extended ? 300 : 200)}</span>
         <a className="font-semibold" href={`/${data.id}`}> View more</a>
       </div>
     </article>
