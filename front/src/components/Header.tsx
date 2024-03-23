@@ -51,7 +51,7 @@ export default function Header() {
           <div className="h-screen w-screen bg-black opacity-65 fixed top-0 left-0"></div>
 
           <div className="md:w-1/3 w-3/4 relative p-10 bg-white flex items-center flex-col">
-            <div onClick={() => { setContactForm(false) }} className='absolute right-3 top-2 text-2xl cursor-pointer'>x</div>
+            <div onClick={() => { setContactForm(false) }} className='absolute right-3 text-black top-2 text-2xl cursor-pointer'>x</div>
             <h3 className="text-[#f1a10a] font-bold text-3xl">Contact</h3>
             <FormRender formSchema={formSchema} />
           </div>
