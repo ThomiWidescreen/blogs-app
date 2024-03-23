@@ -28,7 +28,7 @@ const FormComponent = ({ formSchema }: { formSchema: FormSchema }) => {
   };
 
   return (
-    <form className='flex flex-col gap-5 mt-5' onSubmit={handleSubmit}>
+    <form className='flex text-black flex-col gap-5 mt-5' onSubmit={handleSubmit}>
       {Object.keys(formSchema).map((fieldName) => (
         <div className="flex flex-col gap-1" key={fieldName}>
           <label className='font-semibold' htmlFor={fieldName}>{formSchema[fieldName].label}</label>

@@ -10,11 +10,11 @@ export default function PostDetail({ data }: IBlogEntryProps) {
         <div className="flex">
           <img alt="Random image" src={`https://source.unsplash.com/640x640/?${data.id}`} className="w-1/2 aspect-square"></img>
           <div className="lg:p-7 p-2 text-center flex w-full items-center justify-center flex-col">
-            <span className="font-light">{data.author}</span>
+            <span className="font-light text-black">{data.author}</span>
             <h2 className="text-lg lg:text-2xl font-bold text-[#f1a10a]">{data.title}</h2>
           </div>
         </div>
-        <div className="lg:py-16 py-6 px-12  lg:px-32">
+        <div className="lg:py-16 text-black py-6 px-12  lg:px-32">
           {data.content}
 
         </div>
